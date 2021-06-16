@@ -9,24 +9,25 @@
 </head>
 <body>
 
-  <header>
-
+  <header class="header">
+    <img class='trybewarts-header-logo' src='images/trybewarts-header-logo.svg'>
   </header>
+  
   <main>
 
-      <form id="evaluation-form" action="" method="GET">
-        <legend>Forms</legend>
-        <input type="text" id="name" class="name" placeholder="Nome">
+    <form id="evaluation-form" action method="GET">
 
-        <input type="text" id="lastName" class="lastName" placeholder="Sobrenome">
+      <input type="text" id="input-name" name="Nome" class="name" placeholder="Nome">
 
-        <input type="email" id="email" class="email" placeholder="Email">
+      <input type="text" id="input-lastname" name="Sobrenome" class="lastName" placeholder="Sobrenome">
 
-        <select name="house" id="house">
+      <input type="email" id="input-email" name="Email" class="email" placeholder="Email">
 
-        </select>
-
-      </form>
+    </form>
+     
+    <div>
+       <img src="images/trybewarts-colored.svg"  id="trybewarts-forms-logo" alt="Imagem Trybewarts">
+    </div>
   
   </main>
   <script src="script.js"></script>
