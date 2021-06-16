@@ -1,6 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-login {
+  display: flex;
+}
 
 main {
-  display: flex
+  display: flex;
 }
 
 form {
@@ -10,21 +25,7 @@ form {
   flex-direction: column;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
- 
-}
-
-.header{
-  display: flex;
-  background-color: rgb(50, 167, 145);
-}
-
 #trybewarts-forms-logo {
   height: 500px;
 }
+
