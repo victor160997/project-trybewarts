@@ -13,3 +13,19 @@
 .trybewarts-login {
   display: flex;
 }
+
+main {
+  display: flex;
+}
+
+form {
+  display: flex;
+  width: 675px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+img {
+  height: 500px;
+}
+
