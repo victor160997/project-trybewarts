@@ -18,17 +18,3 @@ function alertaInvalido() {
 }
 
 submit.addEventListener('click', alertaInvalido);
-
-function checar(aleatory){
-  
-}
-
-const check = document.getElementById('agreement')
-check.addEventListener('click', checar);
-
-function previne(event){
-  event.preventDefault()
-}
-
-const button = document.getElementById('submit-btn');
-button.addEventListener('click', previne);
