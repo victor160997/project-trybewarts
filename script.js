@@ -19,29 +19,6 @@ function alertaInvalido() {
 
 submit.addEventListener('click', alertaInvalido);
 
-/* const checkbox = document.getElementById('agreement');
-let result = '';
-
-function checar(aleatory){
-  if(checkbox. checked){
-    result = 'checado';
-  }
-}
-
-checkbox.addEventListener('click', checar);
-
-const button = document.getElementById('submit-btn');
-
-function previne(event){
-  if(result === 'checado'){
-    console.log('enviado');
-  } else {
-    event.preventDefault();
-  }
-}
-
-button.addEventListener('click', previne); */
-
 const button = document.getElementById('submit-btn');
 
 function checkButton() {
@@ -56,7 +33,20 @@ const checkbox = document.getElementById('agreement');
 function checar() {
   if (checkbox.checked) {
     button.disabled = false;
+  } else {
+    button.disabled = true;
   }
 }
 
 checkbox.addEventListener('click', checar);
+
+/* Req 20 */
+
+const contador = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('keyup', () => {
+  const max = 500;
+  const cont = textarea.value.length;
+  const resta = max - cont;
+  contador.innerText = resta;
+});
